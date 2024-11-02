@@ -1,21 +1,30 @@
 <script setup lang="ts">
-const route = useRoute();
+import { useThemeStore } from '~/stores/themeStore.ts';
 
-if (!route.path.includes("/auth")) {
-  // console.log("auth");
+const route = useRoute();
+const themeStore = useThemeStore();
+
+onMounted(() => {
+	document.documentElement.setAttribute('data-theme', themeStore.themeName || 'dark');
+});
+
+if (!route.path.includes('/auth')) {
+	// console.log("auth");
 }
 
 useHead({
-  title: "itam-app",
+	title: 'itam-app',
 });
 </script>
 
 <template>
-  <div id="#app">
-    <div>hi</div>
-    <NuxtRouteAnnouncer />
-    <!-- <NuxtLayout> -->
-    <NuxtPage />
-    <!-- </NuxtLayout> -->
-  </div>
+	<div id="#app">
+		<TopBar />
+
+		<div>hi</div>
+		<NuxtRouteAnnouncer />
+		<!-- <NuxtLayout> -->
+		<NuxtPage />
+		<!-- </NuxtLayout> -->
+	</div>
 </template>
