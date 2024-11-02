@@ -8,8 +8,8 @@ onMounted(() => {
 	document.documentElement.setAttribute('data-theme', themeStore.themeName || 'dark');
 });
 
-if (!route.path.includes('/auth')) {
-	// console.log("auth");
+if (route.path.includes('/adminPanel')) {
+	// console.log('check');
 }
 
 useHead({
@@ -21,7 +21,6 @@ useHead({
 	<div id="#app">
 		<TopBar />
 
-		<div>hi</div>
 		<NuxtRouteAnnouncer />
 		<!-- <NuxtLayout> -->
 		<NuxtPage />

@@ -92,7 +92,7 @@ const toggleTheme = () => {
 			<PopoverGroup class="hidden lg:flex lg:gap-x-12">
 				<Popover class="relative">
 					<PopoverButton class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
-						Product
+						Карьера
 						<ChevronDownIcon
 							class="h-5 w-5 flex-none text-gray-400"
 							aria-hidden="true"
@@ -156,9 +156,9 @@ const toggleTheme = () => {
 					</transition>
 				</Popover>
 
-				<a class="text-sm/6 font-semibold text-gray-900">Features</a>
-				<a class="text-sm/6 font-semibold text-gray-900">Marketplace</a>
-				<a class="text-sm/6 font-semibold text-gray-900">Company</a>
+				<a class="text-sm/6 font-semibold text-gray-900">Курсы</a>
+				<a class="text-sm/6 font-semibold text-gray-900">Магазин</a>
+				<a class="text-sm/6 font-semibold text-gray-900">Лендинг</a>
 			</PopoverGroup>
 			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 				<div class="mr-7 text-black">
@@ -191,11 +191,7 @@ const toggleTheme = () => {
 						</svg>
 					</label>
 				</div>
-				<a
-					class="text-sm/6 font-semibold mt-1 text-gray-900"
-					@click="toggleTheme()"
-					>Log in <span aria-hidden="true">&rarr;</span></a
-				>
+				<a class="text-sm/6 font-semibold mt-1 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
 			</div>
 		</nav>
 		<Dialog
@@ -239,7 +235,7 @@ const toggleTheme = () => {
 								<DisclosureButton
 									class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
 								>
-									Product
+									Карьера
 									<ChevronDownIcon
 										:class="[open ? 'rotate-180' : '', 'h-5 w-5 flex-none']"
 										aria-hidden="true"
@@ -258,15 +254,15 @@ const toggleTheme = () => {
 							</Disclosure>
 							<a
 								class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-								>Features</a
+								>Курсы</a
 							>
 							<a
 								class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-								>Marketplace</a
+								>Магазин</a
 							>
 							<a
 								class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-								>Company</a
+								>Лендинг</a
 							>
 						</div>
 						<div class="py-6">
